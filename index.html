@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <section id="tela">
+
+        <h1><br>Calculadora v1.0</h1>
+
+        <div id="sub_tela">
+            <br>
+            <div id="entrada">
+                
+                <input type="number" name="entrada_" id="numero_input" max="99999999" autofocus ="true"> 
+                
+                
+            </div>
+            <br>
+            <div id="opcao1">
+                <p onclick="somar(numero_input)"><strong>Somar</strong></p>
+            </div>
+
+            <div id="opcao2">
+                <p onclick="subtrair(numero_input)"><strong>Subtrair</strong></p>
+            </div>
+
+            <div id="opcao3">
+                <p onclick="multiplicar(numero_input)"><strong>Multiplicar</strong></p>
+            </div>
+            
+            <div id="opcao4">
+                <p onclick="dividir(numero_input)"><strong>Dividir</strong></p>
+            </div>
+
+            <div id="resultado">
+                (Resultado dos Calculos)
+                
+            </div>
+            <input type="button" value="zerar" id="zerar" onclick="zerar()">
+        </div>
+
+    </section>
+    
+    <footer><script src="script.js"></script></footer>
+</body>
+</html>
